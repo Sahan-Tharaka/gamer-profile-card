@@ -58,7 +58,8 @@ const GamerProfileCard = ({ profile, onNext, onPrev, isAnimating }) => {
         </div>
 
         <div className="-mt-12 px-6 pb-6 md:px-8 md:pb-8">
-          <div className={`rounded-2xl border border-slate-800/70 bg-slate-950/80 p-6 shadow-2xl ring-1 ring-white/5 backdrop-blur md:p-8 ${isAnimating ? 'content-fade-in' : ''}`}>
+          <div className="rounded-2xl border border-slate-800/70 bg-slate-950/80 p-6 shadow-2xl ring-1 ring-white/5 backdrop-blur md:p-8">
+            <div className={isAnimating ? 'content-fade-in' : ''}>
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="flex items-center gap-4 md:gap-6">
                 <div className="relative h-20 w-20 md:h-24 md:w-24">
@@ -182,6 +183,7 @@ const GamerProfileCard = ({ profile, onNext, onPrev, isAnimating }) => {
                   ))}
                 </ul>
               </div>
+            </div>
             </div>
           </div>
         </div>
