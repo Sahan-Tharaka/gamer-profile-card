@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+:root {
+  color: #e2e8f0;
+  background-color: #050914;
+  font-family: 'Space Grotesk', 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at 50% 85%, rgba(94, 234, 212, 0.12), transparent 30%),
+    #050914;
+  color: #e2e8f0;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #f8fafc;
+}
+
+a {
+  color: inherit;
+}
+
+/* Subtle card content transition */
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0.5;
+    transform: translateY(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-fade-in {
+  animation: contentFadeIn 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Card transition animations */
+@keyframes cardEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cardExit {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+}
+
+.card-enter {
+  animation: cardEnter 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.card-exit {
+  animation: cardExit 0.3s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
