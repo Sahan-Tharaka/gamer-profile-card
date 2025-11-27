@@ -41,6 +41,7 @@ Technologies
 The goal of this project is to improve frontend skills. It covers API integration, component structure, state handling, and rendering dynamic UI.
 
 How to run
+
 npm install
 npm start
 
