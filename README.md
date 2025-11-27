@@ -43,6 +43,7 @@ The goal of this project is to improve frontend skills. It covers API integratio
 How to run
 
 npm install
+
 npm start
 
 API source
