@@ -1,16 +1,50 @@
-# React + Vite
+Gamer Profile Card (React + API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a small React application created to practice core frontend skills. It uses a public API to load character data and map that data into a custom gamer profile UI.
 
-Currently, two official plugins are available:
+* Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React component structure with clean props
 
-## React Compiler
+API fetching with useEffect and useState
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Next and Previous buttons to switch between characters
 
-## Expanding the ESLint configuration
+Tailwind CSS for styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Custom mapping function that turns API data into gamer stats
+
+Dynamic profile card layout
+
+How it works
+
+The app fetches character data from the Rick and Morty API.
+
+A mapping function converts the raw API response into fields that match the gamer profile design.
+
+The GamerProfileCard component displays the final profile.
+
+Next and Previous buttons change the character ID and trigger a new fetch.
+
+* Technologies
+
+- React
+
+- Tailwind CSS
+
+- Vite
+
+- Rick and Morty API
+
+* Purpose
+
+The goal of this project is to improve frontend skills. It covers API integration, component structure, state handling, and rendering dynamic UI.
+
+* How to run
+npm install
+npm start
+
+API source
+
+Rick and Morty API
+https://rickandmortyapi.com/
